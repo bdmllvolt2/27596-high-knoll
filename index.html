@@ -9,11 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #1a1a1a;
-            --background: #fcfbfa;
-            --text: #2d2d2d;
-            --text-light: #666666;
-            --border: #e5e0da;
+            --primary: #11161a;        /* Deep Obsidian/Slate */
+            --background: #f7f6f2;     /* Warm Alabaster/Linen */
+            --text: #2d3338;           /* Muted Charcoal */
+            --text-light: #737b82;     /* Misty Gray */
+            --border: #e3dec3;         /* Soft Stone */
+            --dark-accent: #1e262c;    /* Deep Water Slate */
         }
 
         * {
@@ -130,11 +131,11 @@
             text-align: center;
         }
 
-        /* Gallery Grid */
+       /* Gallery Grid */
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 45px; /* Increased from 25px for an editorial, spacious feel */
             margin-bottom: 80px;
         }
 
@@ -202,27 +203,28 @@
         </div>
     </section>
 
-    <section class="stats-bar">
+  <!-- Property Metrics Table/Bar -->
+    <section class="stats-bar" style="background-color: var(--dark-accent); border-bottom: 1px solid var(--primary); padding: 40px 20px;">
         <div class="stats-container">
             <div class="stat-item">
-                <div class="label">Offering Price</div>
-                <div class="value">$6,995,000</div>
+                <div class="label" style="color: var(--text-light); letter-spacing: 3px;">Offering Price</div>
+                <div class="value" style="color: #ffffff; font-size: 2.2rem;">$6,995,000</div>
             </div>
             <div class="stat-item">
-                <div class="label">Square Feet</div>
-                <div class="value">6,432</div>
+                <div class="label" style="color: var(--text-light); letter-spacing: 3px;">Square Feet</div>
+                <div class="value" style="color: #ffffff; font-size: 2.2rem;">6,432</div>
             </div>
             <div class="stat-item">
-                <div class="label">Price / Sq Ft</div>
-                <div class="value">$1,087</div>
+                <div class="label" style="color: var(--text-light); letter-spacing: 3px;">Price / Sq Ft</div>
+                <div class="value" style="color: #ffffff; font-size: 2.2rem;">$1,087</div>
             </div>
             <div class="stat-item">
-                <div class="label">Bedrooms</div>
-                <div class="value">5</div>
+                <div class="label" style="color: var(--text-light); letter-spacing: 3px;">Bedrooms</div>
+                <div class="value" style="color: #ffffff; font-size: 2.2rem;">5</div>
             </div>
             <div class="stat-item">
-                <div class="label">Bathrooms</div>
-                <div class="value">6</div>
+                <div class="label" style="color: var(--text-light); letter-spacing: 3px;">Bathrooms</div>
+                <div class="value" style="color: #ffffff; font-size: 2.2rem;">6</div>
             </div>
         </div>
     </section>
@@ -289,45 +291,42 @@
             <img src="images/3_cropped_web.jpg.jpg" alt="Property Floorplan Layout" loading="lazy">
         </div>
     </section>
-<!-- Lead Capture & Broker Contact Section -->
-    <section class="contact-section" style="background-color: #ffffff; border-top: 1px solid var(--border); padding: 80px 20px;">
-        <div style="max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px; text-align: left;">
+<!-- Lead Capture & Broker Contact Section (Inverted Luxury Theme) -->
+<section class="contact-section" style="background-color: var(--dark-accent); border-top: 1px solid var(--primary); padding: 80px 20px;">
+    <div style="max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px; text-align: left;">
+        
+        <!-- Broker Profile Details -->
+        <div>
+            <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; margin-bottom: 15px; color: #ffffff;">Inquiries & Showings</h2>
+            <p style="font-size: 1.3rem; font-weight: 500; margin-bottom: 5px; color: #ffffff;">Cindy Stahl•DRE #01057784</p>
+            <p style="font-size: 1.3rem; font-weight: 500; margin-bottom: 5px; color: #ffffff;">David Vail•DRE #01136916</p>
+            <p style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; color: var(--text-light); margin-bottom: 25px;">Sotheby's International Realty</p>
             
-            <!-- Broker Profile Details -->
-            <div>
-                <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; margin-bottom: 15px; color: var(--primary);">Inquiries & Showings</h2>
-                <p style="font-size: 1.3rem; font-weight: 500; margin-bottom: 5px; color: var(--text);">Cindy Stahl•DRE #01057784</p>
-		<p style="font-size: 1.3rem; font-weight: 500; margin-bottom: 5px; color: var(--text);">David Vail•DRE #01136916</p>
-                <p style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; color: var(--text-light); margin-bottom: 25px;">Sotheby's International Realty</p>
-                
-                <p style="margin-bottom: 8px; color: var(--text); font-size: 1.05rem;"><strong>Direct:</strong> 909.744.2151</p>
-                <p style="color: var(--text-light); font-size: 0.9rem; margin-top: 15px; font-style: italic;">Private showings are available by appointment.</p>
-            </div>
-            
-            <!-- Sleek Inquiry Form -->
-<div>
-    <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; margin-bottom: 20px; color: var(--primary);">Schedule a Private Tour</h3>
-    
-    <!-- Added the Web3Forms Action Link here -->
-    <form action="https://api.web3forms.com/submit" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
-        
-        <!-- Put your real access key inside the value="" below -->
-        <input type="hidden" name="access_key" value="9d50b697-867b-439c-9f4d-47a8a63d6e65">
-        
-        <!-- Optional: Redirects the user back to your site after they submit -->
-        <input type="hidden" name="from_name" value="27596 High Knoll Landing Page">
-        
-        <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 12px; border: 1px solid var(--border); font-family: inherit; background-color: var(--background); font-size: 0.95rem;">
-        <input type="email" name="email" placeholder="Email Address" required style="width: 100%; padding: 12px; border: 1px solid var(--border); font-family: inherit; background-color: var(--background); font-size: 0.95rem;">
-        <input type="tel" name="phone" placeholder="Phone Number" required style="width: 100%; padding: 12px; border: 1px solid var(--border); font-family: inherit; background-color: var(--background); font-size: 0.95rem;">
-        <textarea name="message" placeholder="Preferred Date / Message" rows="4" required style="width: 100%; padding: 12px; border: 1px solid var(--border); font-family: inherit; background-color: var(--background); resize: vertical; font-size: 0.95rem;">I am interested in scheduling a private tour of 27596 High Knoll.</textarea>
-        
-        <button type="submit" style="background-color: var(--primary); color: #ffffff; border: none; padding: 15px; font-family: inherit; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; cursor: pointer; font-weight: 500;">Submit Request</button>
-    </form>
-</div>
-            
+            <p style="margin-bottom: 8px; color: #ffffff; font-size: 1.05rem;"><strong>Direct:</strong> 909.744.2151</p>
+            <p style="color: var(--text-light); font-size: 0.9rem; margin-top: 15px; font-style: italic;">Private showings are available by appointment.</p>
         </div>
-    </section>
+        
+        <!-- Sleek Inquiry Form -->
+        <div>
+            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; margin-bottom: 20px; color: #ffffff;">Schedule a Private Tour</h3>
+            
+            <form action="https://api.web3forms.com/submit" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+                
+                <!-- Web3Forms Access Key -->
+                <input type="hidden" name="access_key" value="9d50b697-867b-439c-9f4d-47a8a63d6e65">
+                <input type="hidden" name="from_name" value="27596 High Knoll Landing Page">
+                
+                <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 12px; border: 1px solid rgba(255,255,255,0.2); font-family: inherit; background-color: rgba(255, 255, 255, 0.05); color: #ffffff; font-size: 0.95rem;">
+                <input type="email" name="email" placeholder="Email Address" required style="width: 100%; padding: 12px; border: 1px solid rgba(255,255,255,0.2); font-family: inherit; background-color: rgba(255, 255, 255, 0.05); color: #ffffff; font-size: 0.95rem;">
+                <input type="tel" name="phone" placeholder="Phone Number" required style="width: 100%; padding: 12px; border: 1px solid rgba(255,255,255,0.2); font-family: inherit; background-color: rgba(255, 255, 255, 0.05); color: #ffffff; font-size: 0.95rem;">
+                <textarea name="message" placeholder="Preferred Date / Message" rows="4" required style="width: 100%; padding: 12px; border: 1px solid rgba(255,255,255,0.2); font-family: inherit; background-color: rgba(255, 255, 255, 0.05); color: #ffffff; resize: vertical; font-size: 0.95rem;">I am interested in scheduling a private tour of 27596 High Knoll.</textarea>
+                
+                <button type="submit" style="background-color: #ffffff; color: var(--dark-accent); border: none; padding: 15px; font-family: inherit; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; cursor: pointer; font-weight: 600;">Submit Request</button>
+            </form>
+        </div>
+        
+    </div>
+</section>
     <footer>
         <p>&copy; 2026 High Knoll. All Rights Reserved.</p>
     </footer>
