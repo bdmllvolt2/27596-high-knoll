@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>27596 High Knoll | Lake Arrowhead Luxury Estate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a1a1a;
+            --background: #fcfbfa;
+            --text: #2d2d2d;
+            --text-light: #666666;
+            --border: #e5e0da;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, .hero-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 400;
+            color: var(--primary);
+        }
+
+        /* Hero Banner */
+        .hero {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url('images/1.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            color: #ffffff;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-weight: 300;
+        }
+
+        /* Property Stats Bar */
+        .stats-bar {
+            background-color: #ffffff;
+            border-bottom: 1px solid var(--border);
+            padding: 30px 20px;
+        }
+
+        .stats-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+
+        .stat-item .label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-light);
+            margin-bottom: 5px;
+        }
+
+        .stat-item .value {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            color: var(--primary);
+        }
+
+        /* Main Content Section */
+        .container {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .section-header p {
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1rem;
+        }
+
+        .description-block {
+            max-width: 800px;
+            margin: 0 auto 80px auto;
+            font-size: 1.1rem;
+            color: #4a4a4a;
+            text-align: center;
+        }
+
+        /* Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+            margin-bottom: 80px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            background-color: #eee;
+            aspect-ratio: 3 / 2;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.03);
+        }
+
+        /* Dedicated Floorplan Section */
+        .floorplan-section {
+            background-color: #ffffff;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .floorplan-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .floorplan-container img {
+            width: 100%;
+            height: auto;
+            margin-top: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border);
+        }
+
+        @media (max-width: 768px) {
+            .hero-title { font-size: 2.5rem; }
+            .gallery-grid { grid-template-columns: 1fr; }
+            .container { margin: 40px auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">27596 High Knoll</h1>
+            <p class="hero-subtitle">Lake Arrowhead, California</p>
+        </div>
+    </section>
+
+    <section class="stats-bar">
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="label">Offering Price</div>
+                <div class="value">$6,995,000</div>
+            </div>
+            <div class="stat-item">
+                <div class="label">Square Feet</div>
+                <div class="value">6,432</div>
+            </div>
+            <div class="stat-item">
+                <div class="label">Price / Sq Ft</div>
+                <div class="value">$1,087</div>
+            </div>
+            <div class="stat-item">
+                <div class="label">Bedrooms</div>
+                <div class="value">5</div>
+            </div>
+            <div class="stat-item">
+                <div class="label">Bathrooms</div>
+                <div class="value">6</div>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="section-header">
+            <h2>The Estate Overview</h2>
+            <p>An architectural masterpiece offering unparalleled privacy and panoramic alpine vistas.</p>
+        </div>
+
+        <div class="description-block">
+            <p>Nestled in the exclusive canopy of Lake Arrowhead, this storybook English Tudor estate blends old-world craftsmanship with modern luxury finishes. Featuring hand-hewn timber accents, custom stonework, an expansive chef's culinary space, and curated entertaining levels—this residence stands as a definitive legacy asset.</p>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="images/2.jpg" alt="Estate Interior" loading="lazy"></div>
+            <div class="gallery-item"><img src="images/4.jpg" alt="Living Spaces" loading="lazy"></div>
+            <div class="gallery-item"><img src="images/5.jpg" alt="Gourmet Kitchen" loading="lazy"></div>
+            <div class="gallery-item"><img src="images/6.jpg" alt="Primary Retreat" loading="lazy"></div>
+            <div class="gallery-item"><img src="images/7.jpg" alt="Storybook Walkway" loading="lazy"></div>
+            <div class="gallery-item"><img src="images/8.jpg" alt="Outdoor Deck" loading="lazy"></div>
+        </div>
+    </main>
+
+    <section class="floorplan-section">
+        <div class="section-header">
+            <h2>The Architectural Layout</h2>
+            <p>Meticulously mapped spatial layout designed for grand-scale entertainment and private retreats.</p>
+        </div>
+        <div class="floorplan-container">
+            <img src="images/3.jpg" alt="Property Floorplan Layout" loading="lazy">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 High Knoll Estate. Presentation courtesy of Hanley Investment Group.</p>
+    </footer>
+
+</body>
+</html>
