@@ -302,20 +302,30 @@
                 
                 <p style="margin-bottom: 8px; color: var(--text); font-size: 1.05rem;"><strong>Direct:</strong> 909.744.2151</p>
                 <p style="margin-bottom: 8px; color: var(--text); font-size: 1.05rem;"><strong>Email:</strong> [Email Address]</p>
-                <p style="color: var(--text-light); font-size: 0.9rem; margin-top: 15px; font-style: italic;">Private tours are available strictly by appointment to qualified principals.</p>
+                <p style="color: var(--text-light); font-size: 0.9rem; margin-top: 15px; font-style: italic;">Private showings are available by appointment.</p>
             </div>
             
             <!-- Sleek Inquiry Form -->
-            <div>
-                <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; margin-bottom: 20px; color: var(--primary);">Schedule a Private Tour</h3>
-                <form style="display: flex; flex-direction: column; gap: 15px;">
-                    <input type="text" placeholder="Your Name" required style="width: 100%; padding: 12px; border: 1px solid var(--border); font-family: inherit; background-color: var(--background); font-size: 0.95rem;">
-                    <input type="email" placeholder="Email Address" required style="width: 100%; padding: 12px; border: 1px solid var(--border); font-family: inherit; background-color: var(--background); font-size: 0.95rem;">
-                    <input type="tel" placeholder="Phone Number" required style="width: 100%; padding: 12px; border: 1px solid var(--border); font-family: inherit; background-color: var(--background); font-size: 0.95rem;">
-                    <textarea placeholder="Preferred Date / Message" rows="4" required style="width: 100%; padding: 12px; border: 1px solid var(--border); font-family: inherit; background-color: var(--background); resize: vertical; font-size: 0.95rem;">I am interested in scheduling a private tour of 27596 High Knoll.</textarea>
-                    <button type="submit" style="background-color: var(--primary); color: #ffffff; border: none; padding: 15px; font-family: inherit; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; cursor: pointer; font-weight: 500;">Submit Request</button>
-                </form>
-            </div>
+<div>
+    <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; margin-bottom: 20px; color: var(--primary);">Schedule a Private Tour</h3>
+    
+    <!-- Added the Web3Forms Action Link here -->
+    <form action="https://api.web3forms.com/submit" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+        
+        <!-- Put your real access key inside the value="" below -->
+        <input type="hidden" name="access_key" value="9d50b697-867b-439c-9f4d-47a8a63d6e65">
+        
+        <!-- Optional: Redirects the user back to your site after they submit -->
+        <input type="hidden" name="from_name" value="27596 High Knoll Landing Page">
+        
+        <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 12px; border: 1px solid var(--border); font-family: inherit; background-color: var(--background); font-size: 0.95rem;">
+        <input type="email" name="email" placeholder="Email Address" required style="width: 100%; padding: 12px; border: 1px solid var(--border); font-family: inherit; background-color: var(--background); font-size: 0.95rem;">
+        <input type="tel" name="phone" placeholder="Phone Number" required style="width: 100%; padding: 12px; border: 1px solid var(--border); font-family: inherit; background-color: var(--background); font-size: 0.95rem;">
+        <textarea name="message" placeholder="Preferred Date / Message" rows="4" required style="width: 100%; padding: 12px; border: 1px solid var(--border); font-family: inherit; background-color: var(--background); resize: vertical; font-size: 0.95rem;">I am interested in scheduling a private tour of 27596 High Knoll.</textarea>
+        
+        <button type="submit" style="background-color: var(--primary); color: #ffffff; border: none; padding: 15px; font-family: inherit; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; cursor: pointer; font-weight: 500;">Submit Request</button>
+    </form>
+</div>
             
         </div>
     </section>
